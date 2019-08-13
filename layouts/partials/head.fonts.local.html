@@ -1,0 +1,16 @@
+{{- if or $.Site.Params.debug (findRE `\bhtml-comment\b` $.Site.Params.traceFlags) }}
+  {{ `<!-- partials/head.fonts.local.html -->` | safeHTML }}
+{{- end}}
+  <style>
+    html, body, h1, h2, h3, h4, h5, h6
+    {
+        font-family: 'Arial'     , sans-serif;
+        // font-family: 'Ubuntu Mono'     , monospace;
+        // font-family: 'Ubuntu'          , sans-serif;
+    }
+  </style>
+
+{{- /* Local variables:          */}}
+{{- /* tab-width:        2       */}}
+{{- /* indent-tabs-mode: nil     */}}
+{{- /* End:                      */}}

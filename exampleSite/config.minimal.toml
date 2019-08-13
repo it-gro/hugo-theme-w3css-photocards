@@ -1,0 +1,7 @@
+baseURL       = "http://example.com"
+theme         = "hugo-theme-w3css-photocards"
+title         = "hugo-theme-w3css-photocards exampleSite"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params.photocards]
+  enable        = true
