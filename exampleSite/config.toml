@@ -171,6 +171,7 @@ anchor = "Center"
   colorFrontPhotocardsCard              = "w3-theme-l1"
   colorFrontPhotocardsCardContainer     = "w3-theme-l1"
   colorFrontPhotocardsContainer         = "w3-theme-l3"
+  colorFrontPhotocardsCardTooltip       = "w3-theme-d4"
   #
   # layouts/partials/footer.bottom.html
   colorFooterBottomCell                 = "w3-theme-l5"

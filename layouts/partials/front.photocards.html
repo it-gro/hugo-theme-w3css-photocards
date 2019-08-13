@@ -26,24 +26,30 @@
           {{- if $element.url  }}
             {{- $.Scratch.Set `myImgClass` `w3-hover-opacity` }}
             {{- $.Scratch.Set `myImgStyle` `width:100%`     }}
-          <a class="no-decoration" href='{{ $element.url | relURL }}{{ if $.Site.Params.uglyURLs }}{{$.Site.Params.uglyUrl}}{{ end }}'>
-          {{- end }}
+          <div class="w3-tooltip">
+            <a class="no-decoration" href='{{ $element.url | relURL }}{{ if $.Site.Params.uglyURLs }}{{$.Site.Params.uglyUrl}}{{ end }}'>
+            {{- end }}
 
-          {{- if not $element.url  }}
-            {{- $.Scratch.Set `myImgClass` `w3-round-large` }}
-            {{- $.Scratch.Set `myImgStyle` `width:100%`     }}
-          {{- end }}
+            {{- if not $element.url  }}
+              {{- $.Scratch.Set `myImgClass` `w3-round-large` }}
+              {{- $.Scratch.Set `myImgStyle` `width:100%`     }}
+            {{- end }}
 
-          {{- $myImgClass  := $.Scratch.Get `myImgClass` }}
-          {{- $myImgStyle  := $.Scratch.Get `myImgStyle` }}
-          {{- $myImg       := index $element `resImg`                       }} {{/* case sensitive ! */}}
-          {{- $myImgCmd    := index $element `resImgCmd` | default (index $.Site.Params.photocards (lower `resImgCmd`   ) )  | default `Resize` }}
-          {{- $myImgOpt    := index $element `resImgOpt` | default (index $.Site.Params.photocards (lower `resImgCmdOpt`) )  | default `300x`   }}
+            {{- $myImgClass  := $.Scratch.Get `myImgClass` }}
+            {{- $myImgStyle  := $.Scratch.Get `myImgStyle` }}
+            {{- $myImg       := index $element `resImg`                       }} {{/* case sensitive ! */}}
+            {{- $myImgCmd    := index $element `resImgCmd` | default (index $.Site.Params.photocards (lower `resImgCmd`   ) )  | default `Resize` }}
+            {{- $myImgOpt    := index $element `resImgOpt` | default (index $.Site.Params.photocards (lower `resImgCmdOpt`) )  | default `300x`   }}
 
-          {{ partial `resource.image.html` (dict `page` $.Page `class` $myImgClass `style` $myImgStyle `img` $myImg `cmd` $myImgCmd `opt` $myImgOpt ) }}
+            {{ partial `resource.image.html` (dict `page` $.Page `class` $myImgClass `style` $myImgStyle `img` $myImg `cmd` $myImgCmd `opt` $myImgOpt ) }}
 
-          {{- if $element.url  }}
-          </a>
+            {{- if $element.url  }}
+            </a>
+            <p class="w3-text w3-tag {{ default `w3-red` ($.Site.Param `colorFrontPhotocardsCardTooltip`)}}" style="position:absolute;left:5%;top:5%">
+              {{ $element.tooltip }}
+            </p>
+          </div>
+
           {{- end -}} {{/* if and image url */}}
 
             <div class='w3-container {{if $element.url}}{{printf `%s` `w3-hover-opacity`}}{{end}} {{ default `w3-theme-l1` ($.Site.Param `colorFrontPhotocardsCardContainer`)}} '>
