@@ -52,7 +52,7 @@
 
           {{- end -}} {{/* if and image url */}}
 
-            <div class='w3-container {{if $element.url}}{{printf `%s` `w3-hover-opacity`}}{{end}} {{ default `w3-theme-l1` ($.Site.Param `colorFrontPhotocardsCardContainer`)}} '>
+            <div class='w3-container {{if $element.url}}{{printf `%s` `w3-hover-opacity`}}{{end}} {{ default `w3-theme-l1` ($.Site.Param `colorFrontPhotocardsCardContainer`)}} {{ default `` ($.Site.Param `textSizeFrontPhotocardsCardContainer`)}} '>
               <h4>{{- $element.title }}</h4>
               {{ $element.description | markdownify }}
             </div>
