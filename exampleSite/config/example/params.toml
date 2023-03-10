@@ -141,7 +141,7 @@
   colorHeaderMarquee                    = "w3-theme-d1"
 #  
 # layouts/partials/front.*.html
-  colorFrontPhotocardsCard              = "w3-theme-l1"
+  colorFrontPhotocardsCard              = "w3-theme-d1"
   colorFrontPhotocardsCardContainer     = "w3-theme-d1"
   colorFrontPhotocardsContainer         = "w3-theme-l1"
   colorFrontPhotocardsCardTooltip       = "w3-theme-d4"
