@@ -24,8 +24,10 @@
   # Monochromatic Color Schemes
   # set W3.CSS color theme (choose one)
   #w3cssColorTheme = "/css/w3-theme-custom.css"
+  #w3cssColorTheme = "/vendor/w3css/4/custom/w3-theme-comet-dc003a.css"
+  #w3cssColorTheme = "/vendor/w3css/4/custom/w3-theme-comet-00263a.css"
   #w3cssColorTheme = "/vendor/w3css/4/w3-theme-amber.css"
-   w3cssColorTheme = "/vendor/w3css/4/w3-theme-black.css"
+  #w3cssColorTheme = "/vendor/w3css/4/w3-theme-black.css"
   #w3cssColorTheme = "/vendor/w3css/4/w3-theme-blue-grey.css"
   #w3cssColorTheme = "/vendor/w3css/4/w3-theme-blue.css"
   #w3cssColorTheme = "/vendor/w3css/4/w3-theme-brown.css"
@@ -117,7 +119,7 @@
   #w3cssColorTheme = "/vendor/w3css/4/color_of_the_year/w3-theme-color-of-year-2018-nebulas-blue.css"
   #w3cssColorTheme = "/vendor/w3css/4/color_of_the_year/w3-theme-color-of-year-2018-pink-lavender.css"
   #w3cssColorTheme = "/vendor/w3css/4/color_of_the_year/w3-theme-color-of-year-2018-quetzal-green.css"
-  #w3cssColorTheme = "/vendor/w3css/4/color_of_the_year/w3-theme-color-of-year-2018-quiet-gray.css"
+  w3cssColorTheme = "/vendor/w3css/4/color_of_the_year/w3-theme-color-of-year-2018-quiet-gray.css"
   #w3cssColorTheme = "/vendor/w3css/4/color_of_the_year/w3-theme-color-of-year-2018-red-pear.css"
   #w3cssColorTheme = "/vendor/w3css/4/color_of_the_year/w3-theme-color-of-year-2018-russet-orange.css"
   #w3cssColorTheme = "/vendor/w3css/4/color_of_the_year/w3-theme-color-of-year-2018-sailor-blue.css"
@@ -128,12 +130,16 @@
   #w3cssColorTheme = "/vendor/w3css/4/color_of_the_year/w3-theme-color-of-year-2018-valiant-poppy.css"
   #w3cssColorTheme = "/vendor/w3css/4/color_of_the_year/w3-theme-color-of-year-2018-warm-sand.css"
 
+
+  # used in layouts/index.html
+  colorHtml                             = "w3-theme-d5"
   # used in layouts/partials/*.html
   # {{ default `w3-theme-l3` ($.Site.Param `color404Container`)}}
   # set the actual color (one of the monochromatic color scheme)
   #
   # layouts/partials/header.marquee.html
-  colorHeaderMarquee                    = "w3-theme-l1"
+  colorHeaderMarquee                    = "w3-theme-l4"
+#  
 # layouts/partials/front.*.html
   colorFrontPhotocardsCard              = "w3-theme-l1"
   colorFrontPhotocardsCardContainer     = "w3-theme-l1"

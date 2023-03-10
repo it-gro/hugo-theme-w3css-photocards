@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='{{ .Site.LanguageCode }}'>
+<html lang='{{ .Site.LanguageCode }}' class="{{ default `w3-theme-l5` ($.Site.Param `colorHtml`)}}">
   {{- if or $.Site.Params.debug (findRE `\bhtml-comment\b` $.Site.Params.traceFlags) }}
   {{ `<!-- index.html  -->` | safeHTML }}
   {{- end}}
