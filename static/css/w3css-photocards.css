@@ -27,6 +27,32 @@ img {
     height: auto;
 }
 
+
+/* -------------------------------------------------- */
+/* front.marquee */
+/* https://www.quackit.com/css/codes/marquees/ */
+
+.top-marquee {
+  white-space: nowrap;
+}
+
+.top-marquee div {
+  transform: translateX(100%);
+  animation: marquee 60s linear infinite;
+}
+
+.top-marquee div:hover {
+  animation-play-state: paused;
+}
+
+.top-marquee span {
+}
+
+@keyframes marquee {
+ 0%   { transform: translateX( 100%); }
+ 100% { transform: translateX(-100%); }
+}
+
 /* ------------------------------------------------------------------------------ */
 /* -- Local variables:      */
 /* -- tab-width:         2  */
