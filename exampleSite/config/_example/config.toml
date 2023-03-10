@@ -1,0 +1,33 @@
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+
+# ##################################################
+# Hugo-defined variables
+baseURL       = "https://example.com"
+title         = "hugo-theme-w3css-photocards exampleSite"
+theme         = "hugo-theme-w3css-photocards"
+languageCode  = "en-us"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+# ##################################################
+# Theme-defined configuration
+
+# ##################################################
+# hugo sections
+
+[imaging]
+# https://gohugo.io/content-management/image-processing/
+# Default resample filter used for resizing. Default is Box,
+# a simple and fast averaging filter appropriate for downscaling.
+# See https://github.com/disintegration/imaging
+#resampleFilter = "box"
+resampleFilter = "CatmullRom"
+
+# Defatult JPEG quality setting. Default is 75.
+quality = 75
+
+# Anchor used when cropping pictures.
+# Default is "smart" which does Smart Cropping, using https://github.com/muesli/smartcrop
+# Smart Cropping is content aware and tries to find the best crop for each image.
+# Valid values are Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+#anchor = "smart"
+anchor = "Center"

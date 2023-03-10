@@ -1,40 +1,5 @@
-# https://gohugo.io/getting-started/configuration/#toml-configuration
-
-# ##################################################
-# Hugo-defined variables
-baseURL       = "https://example.com"
-title         = "hugo-theme-w3css-photocards exampleSite"
-theme         = "hugo-theme-w3css-photocards"
-languageCode  = "en-us"
-disableKinds = ["taxonomy", "taxonomyTerm"]
-
-# ##################################################
-# Theme-defined configuration
-
-# ##################################################
-# hugo sections
-
-[imaging]
-# https://gohugo.io/content-management/image-processing/
-# Default resample filter used for resizing. Default is Box,
-# a simple and fast averaging filter appropriate for downscaling.
-# See https://github.com/disintegration/imaging
-#resampleFilter = "box"
-resampleFilter = "CatmullRom"
-
-# Defatult JPEG quality setting. Default is 75.
-quality = 75
-
-# Anchor used when cropping pictures.
-# Default is "smart" which does Smart Cropping, using https://github.com/muesli/smartcrop
-# Smart Cropping is content aware and tries to find the best crop for each image.
-# Valid values are Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-#anchor = "smart"
-anchor = "Center"
-
 # ##################################################
 # theme-defined params
-[params]
 
   # meta data
   # ##############################
@@ -212,7 +177,7 @@ anchor = "Center"
 # theme sections
 # more theme defined params
 
-[params.favicon]
+[favicon]
   # you may want to use https://realfavicongenerator.net to generate your files
   # used in layouts/partials/head.favicon.html
   # relURL is applied to path
@@ -223,7 +188,7 @@ anchor = "Center"
   msapplicationTileColor = "#da532c"
   themeColor             = "#ffffff"
 
-[params.photocards]
+[photocards]
   # used in layouts/partials/front.photocards.html
   # enable or disable photocards on frontpage
   # see some examples in 'exampleSite/data/photocards'
@@ -234,17 +199,13 @@ anchor = "Center"
   resImgCmd     = "Fill"
   resImgCmdOpt  = "300x200"
 
-[params.resources]
+[resources]
 	# used in layouts/partials/resource.image.html
 	defaultResPagePath	= "resources/images"
 
-[params.marquee]
+[marquee]
   # used in layouts/partials/header.marquee.html
   # enable or disable marquee on frontpage
   enable      = true
   # marquee text is placed in directory as:
   file        = ".marquee.md"
-
-  # no longer valid:
-  # marquee  = '''
-  #            '''
