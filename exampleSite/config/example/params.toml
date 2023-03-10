@@ -24,8 +24,7 @@
   # Monochromatic Color Schemes
   # set W3.CSS color theme (choose one)
   #w3cssColorTheme = "/css/w3-theme-custom.css"
-  #w3cssColorTheme = "/vendor/w3css/4/custom/w3-theme-comet-dc003a.css"
-  w3cssColorTheme = "/vendor/w3css/4/custom/w3-theme-comet-00263a.css"
+  w3cssColorTheme = "/vendor/w3css/4/custom/w3-theme-comet-003550.css"
   #w3cssColorTheme = "/vendor/w3css/4/w3-theme-amber.css"
   #w3cssColorTheme = "/vendor/w3css/4/w3-theme-black.css"
   #w3cssColorTheme = "/vendor/w3css/4/w3-theme-blue-grey.css"
@@ -132,13 +131,13 @@
 
 
   # used in layouts/index.html
-  colorHtml                             = "w3-theme-d1"
+  colorHtml                             = "w3-theme-d5"
   # used in layouts/partials/*.html
   # {{ default `w3-theme-l3` ($.Site.Param `color404Container`)}}
   # set the actual color (one of the monochromatic color scheme)
   #
   # layouts/partials/header.marquee.html
-  colorHeaderMarquee                    = "w3-theme-d1"
+  colorHeaderMarquee                    = "w3-theme-d3"
 #  
 # layouts/partials/front.*.html
   colorFrontPhotocardsCard              = "w3-theme-d1"
@@ -147,7 +146,7 @@
   colorFrontPhotocardsCardTooltip       = "w3-theme-d4"
   #
   # layouts/partials/footer.bottom.html
-  colorFooterBottomCell                 = "w3-theme-l5"
+  colorFooterBottomCell                 = "w3-theme-d3"
   #
 
   # flags used for tracing and html comment output
