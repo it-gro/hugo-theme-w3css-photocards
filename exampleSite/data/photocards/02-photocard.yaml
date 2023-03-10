@@ -2,5 +2,6 @@ weight:      2
 title:       "Consetetur Sadipscing"
 resImg:      "photocards/pixabay.com/02-photocard.jpg"
 url:         http://example.com
+tooltip:     example.com
 description: |
   labore et dolore
