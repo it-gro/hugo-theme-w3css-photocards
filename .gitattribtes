@@ -1,1 +1,7 @@
-* text=lf
+*.txt  text=lf
+*.md   text=lf
+*.html text=lf
+*.css  text=lf
+*.js   text=lf
+*.yaml text=lf
+*.toml text=lf
