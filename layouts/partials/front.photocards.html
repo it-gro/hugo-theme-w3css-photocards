@@ -46,16 +46,22 @@
 
             {{- if $element.url  }}
             </a>
+            {{- if $.Site.Params.enableFrontPhotocardsTooltips }}
             <p class="w3-text w3-tag {{ default `w3-red` ($.Site.Param `colorFrontPhotocardsCardTooltip`)}}" style="position:absolute;left:5%;top:5%">
               {{ $element.tooltip }}
             </p>
+            {{- end -}}
           </div>
 
           {{- end -}} {{/* if and image url */}}
 
-            <div class='w3-container {{if $element.url}}{{printf `%s` `w3-hover-opacity`}}{{end}} {{ default `w3-theme-l1` ($.Site.Param `colorFrontPhotocardsCardContainer`)}} {{ default `` ($.Site.Param `textSizeFrontPhotocardsCardContainer`)}} '>
-              <h4>{{- $element.title }}</h4>
+          <div class='w3-container {{if $element.url}}{{printf `%s` `w3-hover-opacity`}}{{end}} {{ default `w3-theme-l1` ($.Site.Param `colorFrontPhotocardsCardContainer`)}} {{ default `w3-small` ($.Site.Param `textSizeFrontPhotocardsCardContainer`)}} '>
+              {{- if $.Site.Params.enableFrontPhotocardsTitles }}
+              <div class='{{ default `w3-large` ($.Site.Param `textSizeFrontPhotocardsTitles`)}}'>{{- $element.title }}</div>
+              {{- end -}}
+              {{- if $.Site.Params.enableFrontPhotocardsDescription }}
               {{ $element.description | markdownify }}
+              {{- end -}}
             </div>
 
           </div> <!-- w3-card -->
