@@ -34,9 +34,12 @@ img {
 
 .top-marquee {
   white-space: nowrap;
+  /* white-space: normal; */
 }
 
 .top-marquee div {
+  /* width: 200%; */
+  /* text-align: left; */
   transform: translateX(100%);
   animation: marquee 30s linear infinite;
 }
@@ -50,7 +53,7 @@ img {
 
 @keyframes marquee {
   0%   { transform: translateX( 100%); }
-  100% { transform: translateX(-200%); }
+  100% { transform: translateX(-100%); }
 }
 
 /* ------------------------------------------------------------------------------ */
