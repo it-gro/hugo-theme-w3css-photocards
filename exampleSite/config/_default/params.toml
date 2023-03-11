@@ -9,7 +9,7 @@ defaultKeywords                   = ["foo", "bar"]
 defaultDescription                = "example site created with hugo using theme hugo-theme-w3css-basic"
 truncateSummaryForMetaDescription = 120
 # used in layouts/partials/footer.bottom.html
-bottomLeft  = "Copyright (c) 2019, *lobortis nisl* ut aliquip ex ea commodo consequat"
+bottomLeft  = "Copyright (c) 2018 .. 2023, *lobortis nisl* ut aliquip ex ea commodo consequat"
 bottomRight = '(DEFAULT) created with [Hugo](https://gohugo.io)'
 # colors
 # ##############################
