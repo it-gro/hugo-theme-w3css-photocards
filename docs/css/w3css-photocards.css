@@ -1,0 +1,61 @@
+ /*
+    hugo-theme-w3css-photocards styles
+*/
+
+/* -------------------------------------------------- */
+/* all */
+.anchor {
+  vertical-align: super;
+}
+
+/*
+clear
+https://www.w3schools.com/cssref/pr_class_clear.asp
+<div class="clearfix"></div>
+*/
+
+.clearfix{
+    clear:both
+}
+
+a.no-decoration {
+  text-decoration: none !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* -------------------------------------------------- */
+/* front.marquee */
+/* https://www.quackit.com/css/codes/marquees/ */
+
+.top-marquee {
+  white-space: nowrap;
+}
+
+.top-marquee div {
+  transform: translateX(100%);
+  animation: marquee 30s linear infinite;
+}
+
+.top-marquee div:hover {
+  animation-play-state: paused;
+}
+
+.top-marquee span {
+}
+
+@keyframes marquee {
+  0%   { transform: translateX( 100%); }
+  100% { transform: translateX(-200%); }
+}
+
+/* ------------------------------------------------------------------------------ */
+/* -- Local variables:      */
+/* -- tab-width:         2  */
+/* -- css-indent-offset: 2  */
+/* -- indent-tabs-mode: nil */
+/* -- End:                  */
