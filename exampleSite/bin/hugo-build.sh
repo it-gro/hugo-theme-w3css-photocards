@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd $(dirname $0)/..
-hugo -e example --themesDir ../../  --cleanDestinationDir --destination ../docs
+hugo -e github.io --themesDir ../../  --cleanDestinationDir --destination ../docs
