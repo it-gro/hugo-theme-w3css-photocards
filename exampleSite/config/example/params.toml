@@ -1,2 +1,7 @@
 bottomRight = '(EXAMPLE) created with [Hugo](https://gohugo.io) '
 w3cssColorTheme = "css/w3-theme-custom.css"
+textSizeFrontPhotocardsCardContainer   = "w3-small"
+textSizeFrontPhotocardsTitles          = "w3-large"
+enableFrontPhotocardsTitles            = true
+enableFrontPhotocardsTooltips          = true
+enableFrontPhotocardsDescription       = true
