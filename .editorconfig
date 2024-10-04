@@ -5,11 +5,11 @@
 root = true
 
 [*]
-end_of_line = lf
+end_of_line          = lf
 insert_final_newline = true
 
 [*.{md,html,css,js,toml,yaml}]
-charset = utf-8
+charset      = utf-8
 indent_style = space
 indent_size  = 2
 
